@@ -13,6 +13,10 @@ module.exports = {
         extend: {},
     },
     plugins: [
+        // plugin(function({ addVariant }) {
+        //     addVariant('varOne', 'dark:varOne');
+        // }),
+        
         plugin(function({ addVariant, e }) {
             addVariant('varOne', ({ modifySelectors, separator }) => {
                 modifySelectors(({ className }) => {
